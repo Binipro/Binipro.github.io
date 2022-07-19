@@ -12,7 +12,7 @@ div.img-container {
     
   }
 
-  img {
+  .profile_img {
     width: 170px;
     height: 174px;
     position: absolute;
@@ -33,4 +33,11 @@ div.img-container {
     height: auto;
     bottom: 10px;
     background-color: #000000cc;
+  }
+
+  .validator {
+    position: absolute;
+    align-items: flex-end;
+    right: 50px;
+    bottom: 40px;
   }
