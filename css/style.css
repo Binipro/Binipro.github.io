@@ -8,19 +8,23 @@ div.img-container {
     overflow: hidden;
     margin-top: 5px;
     max-height: 100%;
-    background-color: #000000cc;
+    /*background-color: #000000cc;*/
+    background-image: url('https://www.learner.org/wp-content/uploads/2019/05/Habitable-Planet-oceans-fig1-1024x530.jpg');
     
   }
 
+  
   .profile_img {
     width: 170px;
     height: 174px;
     position: absolute;
     border: 2px solid rgba(12, 90, 207, 0.595);
     border-radius: 142px;
-    top: 32px;
-    left: 20px;
+    top: 50px;
+    left: 30px;
+    z-index: 9999999;
   }
+
   p {
     padding: 0;
     color: aliceblue;
