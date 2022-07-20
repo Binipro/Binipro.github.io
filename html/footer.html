@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 2: Footer</title>
+
+    <style>
+        body {
+            background-color: rgb(17, 17, 17);
+            margin: 30px;
+        }
+
+        h3 {
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .footer-outer-container {
+            margin: 20px;
+        }
+
+        .footer-container {
+            display: grid;
+            /*grid-template-columns: 1fr 1fr 1fr;*/
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); /*auto-fit to device size, doc: https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/*/
+            grid-gap: 5px;
+            justify-content: center;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .email-text{
+            width: 284px;
+            height: 30px;
+            border-radius: 137px;
+            border-color: rgb(31 30 30);
+            background-color: rgb(31 30 30);
+            color: white;
+            padding-left: 10px;
+        }
+
+        .email-btn{
+            position: relative;
+            width: 70px;
+            height: 36px;
+            border-radius: 137px;
+            border-color: rgb(209 147 33);
+            background-color: rgb(209 147 33);
+            color: white;
+            padding-left: 10px;
+            margin-left: -70px;
+        }
+
+        .align-right{
+            float: right !important;
+            
+        }
+
+        .grid-item{
+            text-align:left;
+            padding-top: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="footer-outer-container">
+        <div class="footer-container">
+            <div class="grid-item">
+                <h3>About</h3> 
+                <p style="color: gray;font-size: 13px;padding-bottom: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ad qui accusantium explicabo commodi repellendus possimus fuga voluptatum, voluptas facilis laborum ex sed maxime quisquam inventore maiores quas. Eius, quos.</p>
+                
+                <div style="display:flex;">
+                    <img src="https://www.iconsdb.com/icons/preview/orange/phone-28-xxl.png" style="width: 28px;height: 30px;" alt="Phone" >
+                    <p style="padding-left: 8px;">+12913912329</p> 
+                </div>
+
+                <div style="display:flex;">
+                    <img src="https://www.iconsdb.com/icons/preview/orange/new-post-xxl.png" style="width: 30px;height: 40px;" alt="Email">
+                    <p style="padding-left: 8px;">info@gmail.com</p> 
+                </div>
+
+                <div style="display: flex; justify-content: space-around;">
+                    <input class="email-text" type="text" placeholder="Enter your email">
+                    <button class="email-btn">send</button>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <h3>Latest Tweet</h3>
+                <div style="display: flex;">
+                    <img style="width: 30px;height: 30px;" src="https://icon-library.com/images/twitter-icon-white-transparent/twitter-icon-white-transparent-24.jpg" alt="Twitter">
+                    <label style="padding-left: 8px; color: gray;font-size: 13px;padding-bottom: 15px;text-align: left;"> <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem</i> </label>
+                </div>
+
+                <div style="display: flex;">
+                    <img style="width: 30px;height: 30px;" src="https://icon-library.com/images/twitter-icon-white-transparent/twitter-icon-white-transparent-24.jpg" alt="Twitter">
+                    <label style="padding-left: 8px; color: gray;font-size: 13px;padding-bottom: 15px;text-align: left;"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi minima sed accusantium!</i> </label>
+                </div>
+
+                <div style="display: flex;">
+                    <img style="width: 30px;height: 30px;" src="https://icon-library.com/images/twitter-icon-white-transparent/twitter-icon-white-transparent-24.jpg" alt="Twitter">
+                    <label style="padding-left: 8px; color: gray;font-size: 13px;padding-bottom: 15px;text-align: left;"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit.</i> </label>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <h3>Instagram</h3>
+                <div style="display:grid; grid-template-columns: 1fr 1fr; grid-gap: 5px; justify-items: center;">
+                    <img style="width: 100%;height: 100px;" src="https://images.pexels.com/photos/3335016/pexels-photo-3335016.jpeg?auto=compress&cs=tinysrgb&h=566.525&fit=crop&w=633.175&dpr=1" alt="Photo Camera">
+                    <img style="width: 100%;height: 100px;" src="https://image.shutterstock.com/image-photo/custom-bobber-motorbike-standing-authentic-600w-1739584982.jpg" alt="Motorbike">
+                    <img style="width: 100%;height: 100px;" src="https://wallpaperaccess.com/full/7300550.jpg" alt="mountains">
+                    <img style="width: 100%;height: 100px;" src="https://wallpapers.oceanofwallpapers.com/wallpapers/previews/wallpaper-kweglm-926880-Preview.webp" alt="forest">
+                </div>
+
+            </div>
+            
+        </div>
+
+        <hr style="margin-top: 100px; border-color: #dfdede;">
+        <div>
+            <a href="#"> Home </a>
+            <a href="#"> About </a>
+            <a href="#"> Ourworks </a>
+            <a href="#"> Services </a>
+            <a href="#"> Blog </a>
+            <a href="#"> Contacts </a>
+            <a href="#" class="align-right"> Colorlib </a>
+        </div>
+
+
+
+    </div>
+    
+</body>
+</html>
